@@ -85,7 +85,7 @@
       </div>
       <div>
         <label for="positivos">Positivos</label>
-        <input type="number" pattern="[0-9]+$" required>
+        <input type="number" min="0" required>
       </div>
     </div>
     <!-- El usuario podra incrematar de 0.5 en 0.5 y solo podra incremantar hasta 20, igualmente no podra decrementar menos de 10 y al iniciar el formulario iniciar con 15 -->
@@ -162,11 +162,12 @@
       <div>
         <label for="genero">genero</label>
       </div>
-      <div>
+      <div> 
         <input list="genero" placeholder="Genero" required >
         <datalist id="genero">
           <option value="Masculino">
           <option value="Femenino">
+          <option value="Otro">
         </datalist>
       </div>
     </div>
@@ -184,13 +185,23 @@
         <label for="materias">Materias</label>
       </div>
       <div>
-        <input list="materias" placeholder="materias" >
+        <label for="HTML">HTML</label>
+        <input type="checkbox" value="HTML" id="HTML">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" value="CSS" id="CSS">
+        <label for="JAVA">JAVA</label>
+        <input type="checkbox" value="JAVA" id="JAVA">
+        <label for="PYTHON">PYTHON</label>
+        <input type="checkbox" value="PYTHON" id="PYTHON">
+        <label for="PHP">PHP</label>
+        <input type="checkbox" value="PHP" id="PHP">
+
         <datalist id="materias">
-          <option value="HTML">
-          <option value="CSS">
-          <option value="JAVA">
-          <option value="PYTHON">
-          <option value="PHP">
+          <checkout value="HTML">
+          <checkout value="CSS">
+          <checkout value="JAVA">
+          <checkout value="PYTHON">
+          <checkout value="PHP">
         </datalist>
       </div>
     </div>
@@ -237,11 +248,6 @@
 
     <div>
       <button type="submit">Validar formulario</button>
-    </div>
-    <div>
-      <span>
-        Felicidades, llegamos al final del formulario, eso quiere decir que ya entendimos la actividad. fecha de entrega (sabado 14 de Septiembre del 2024).
-      </span>
     </div>
   </form>
 
